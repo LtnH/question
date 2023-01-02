@@ -11,11 +11,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Launcher {
 
-    /**
-     * @param args command line params
-     */
-    public static void main(final String[] args) {
-        SpringApplication.run(Launcher.class, args);
-    }
+  /**
+   * @param args command line params
+   */
+  public static void main(final String[] args) {
+    SpringApplication.run(Launcher.class, args);
+  }
 
 }
