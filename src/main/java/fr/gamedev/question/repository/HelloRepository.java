@@ -1,14 +1,12 @@
-/**
- * 
- */
 package fr.gamedev.question.repository;
 
+import fr.gamedev.question.data.Salutation;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import fr.gamedev.question.data.Salutation;
-
 /**
+ * interface HelloRepository.
+ *
  * @author djer1
  *
  */

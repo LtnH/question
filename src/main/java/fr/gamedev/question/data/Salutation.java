@@ -5,8 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * @author djer1
+ * classe gérant les messages de bienvenue.
  *
+ * @author djer1
  */
 @Entity
 public class Salutation {
@@ -19,6 +20,8 @@ public class Salutation {
   private String message;
 
   /**
+   * fonction de récupération d'id.
+   *
    * @return the id
    */
   public Long getId() {
@@ -26,6 +29,8 @@ public class Salutation {
   }
 
   /**
+   * fonction pour définir id.
+   *
    * @param theId the id to set
    */
   public void setId(final Long theId) {
@@ -33,6 +38,8 @@ public class Salutation {
   }
 
   /**
+   * fonction de récupération de message.
+   *
    * @return the message
    */
   public String getMessage() {
@@ -40,6 +47,8 @@ public class Salutation {
   }
 
   /**
+   * fonction pour définir message.
+   *
    * @param theMessage the message to set
    */
   public void setMessage(final String theMessage) {

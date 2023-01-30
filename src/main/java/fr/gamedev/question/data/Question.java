@@ -5,39 +5,58 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * @author djer1
+ * classe gérant les questions.
  *
+ * @author djer1
  */
 @Entity
 public class Question {
 
+  /**
+   * id de la question.
+   */
   @GeneratedValue
   @Id
   private long id;
-  private String content;
   /**
+   * contenu de la question.
+   */
+  private String content;
+
+  /**
+   * fonction pour récupérer id.
+   *
    * @return the id
    */
   public long getId() {
     return id;
   }
+
   /**
-   * @param id the id to set
+   * fonction pour définir id.
+   *
+   * @param newId the id to set
    */
-  public void setId(long id) {
-    this.id = id;
+  public void setId(final int newId) {
+    this.id = newId;
   }
+
   /**
+   * fonction de récupération de content.
+   *
    * @return the content
    */
   public String getContent() {
     return content;
   }
+
   /**
-   * @param content the content to set
+   * fonction pour définir content.
+   *
+   * @param newContent the content to set
    */
-  public void setContent(String content) {
-    this.content = content;
+  public void setContent(final String newContent) {
+    this.content = newContent;
   }
 
 }
